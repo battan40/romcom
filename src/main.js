@@ -14,6 +14,7 @@ var homeView = document.querySelector('.home-view');
 var savedView = document.querySelector('.saved-view');
 var viewSavedCovers = document.querySelector('.view-saved-button');
 var homeButton = document.querySelector('.home-button');
+var saveCoverButton = document.querySelector('.save-cover-button');
 // Global Variables
 var savedCovers = [
   new Cover("http://3.bp.blogspot.com/-iE4p9grvfpQ/VSfZT0vH2UI/AAAAAAAANq8/wwQZssi-V5g/s1600/Do%2BNot%2BForsake%2BMe%2B-%2BImage.jpg", "Sunsets and Sorrows", "sunsets", "sorrows")
@@ -32,6 +33,7 @@ homeButton.addEventListener('click', goHome)
 function goToInputForm() {
   homeButton.classList.remove('hidden')
   formView.classList.remove('hidden')
+  saveCoverButton.classList.add('hidden')
   homeView.classList.add('hidden')
   randomCoverButton.classList.add('hidden')
 
@@ -41,6 +43,7 @@ function goToSavedCovers() {
   homeButton.classList.remove('hidden')
   homeView.classList.add('hidden')
   savedView.classList.remove('hidden')
+  saveCoverButton.classList.add('hidden')
   formView.classList.add('hidden')
   randomCoverButton.classList.add('hidden')
 }
@@ -50,6 +53,7 @@ function goHome() {
   randomCoverButton.classList.remove('hidden')
   formView.classList.add('hidden')
   homeView.classList.remove('hidden')
+  saveCoverButton.classList.remove('hidden')
 
 }
 
