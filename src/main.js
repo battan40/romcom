@@ -13,9 +13,7 @@ var formView = document.querySelector('.form-view');
 var homeView = document.querySelector('.home-view');
 var savedView = document.querySelector('.saved-view');
 var viewSavedCovers = document.querySelector('.view-saved-button');
-
-
-
+var homeButton = document.querySelector('.home-button');
 // Global Variables
 var savedCovers = [
   new Cover("http://3.bp.blogspot.com/-iE4p9grvfpQ/VSfZT0vH2UI/AAAAAAAANq8/wwQZssi-V5g/s1600/Do%2BNot%2BForsake%2BMe%2B-%2BImage.jpg", "Sunsets and Sorrows", "sunsets", "sorrows")
@@ -26,19 +24,33 @@ var currentCover;
 
 randomCoverButton.addEventListener('click', makeNewRandomCover);
 window.addEventListener('load', makeNewRandomCover);
-makeYourOwnCoverButton.addEventListener('click', goToInputForm)
-viewSavedCovers.addEventListener('click', goToSavedCovers)
-
+makeYourOwnCoverButton.addEventListener('click', goToInputForm);
+viewSavedCovers.addEventListener('click', goToSavedCovers);
+homeButton.addEventListener('click', goHome)
 
 // Functions
 function goToInputForm() {
+  homeButton.classList.remove('hidden')
   formView.classList.remove('hidden')
   homeView.classList.add('hidden')
+  randomCoverButton.classList.add('hidden')
+
 }
 
 function goToSavedCovers() {
+  homeButton.classList.remove('hidden')
+  homeView.classList.add('hidden')
   savedView.classList.remove('hidden')
   formView.classList.add('hidden')
+  randomCoverButton.classList.add('hidden')
+}
+
+function goHome() {
+  homeButton.classList.add('hidden')
+  randomCoverButton.classList.remove('hidden')
+  formView.classList.add('hidden')
+  homeView.classList.remove('hidden')
+
 }
 
 function makeNewRandomCover(){
