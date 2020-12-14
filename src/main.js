@@ -1,6 +1,7 @@
 
 
 //Query Selectors
+
 var randomCoverButton = document.querySelector('.random-cover-button');
 var coverImage = document.querySelector('.cover-image');
 var coverTitle = document.querySelector('.cover-title');
@@ -16,7 +17,6 @@ var viewSavedCovers = document.querySelector('.view-saved-button');
 var homeButton = document.querySelector('.home-button');
 var saveCoverButton = document.querySelector('.save-cover-button');
 
-var currentCover
 var userCoverInputLine = document.querySelector('#cover');
 var userTitleInputLine = document.querySelector('#title');
 var userFirstDescriptor = document.querySelector('#descriptor1');
@@ -24,10 +24,11 @@ var userSecondDescriptor = document.querySelector('#descriptor2');
 var makeMyBookButton = document.querySelector('make-new-button')
 
 // Global Variables
+
 var savedCovers = [
   new Cover("http://3.bp.blogspot.com/-iE4p9grvfpQ/VSfZT0vH2UI/AAAAAAAANq8/wwQZssi-V5g/s1600/Do%2BNot%2BForsake%2BMe%2B-%2BImage.jpg", "Sunsets and Sorrows", "sunsets", "sorrows")
 ];
-
+var currentCover;
 
 // Event Listeners
 
@@ -36,6 +37,7 @@ window.addEventListener('load', makeNewRandomCover);
 makeYourOwnCoverButton.addEventListener('click', goToInputForm);
 viewSavedCovers.addEventListener('click', goToSavedCovers);
 homeButton.addEventListener('click', goHome)
+makeMyBookButton.addEventListener('click', goToSavedCovers)
 
 // Functions
 
