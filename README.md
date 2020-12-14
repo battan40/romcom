@@ -1,8 +1,8 @@
 ---
-Title: RomCom - Not All Pairs Mate For Life
+Title: RomCom - Not All Pairs Mate for Life
 ---
 
-## Learning Goals Remain
+## My Learning Goals Remain
 
 ([x]) * Write clean, DRY JavaScript for the variables          needed.    
 *I would like to learn how to make it more dynamic and DRY with less variables.*
@@ -18,7 +18,7 @@ I have created an app that allows the user to get curious about the variety and 
 My hope for the user is that the visual encounter of the covers, titles and taglines of the romance novels will be stimulating in its own way.
 
 ## Contributors
-Angela M. Battillo, under the coaching of Jahara Clark and Kristen Bair, wrote the javaScript code for this project.
+Angela M. Battillo wrote the javaScript code for this project, with the coaching of Jahara Clark (her SLC rep) and Kristen Bair (her rock).
 
 ## Functionality Goal
 * I wanted to make it possible for someone to open my link and be able to either click to view random and inclusive romance novel covers or reload the page and view random romance novel covers.  I wanted the buttons to add to the functionality of the page and help guide the user through a visual experience.
