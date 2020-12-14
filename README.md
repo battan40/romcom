@@ -8,6 +8,7 @@ Title: RomCom - Not All Pairs Mate for Life
 *I would like to learn how to make it more dynamic and DRY with less variables.*
 ([x]) Use a provided class by creating object instances using the `new` keyword.  
 ([x]) Manipulate the page after it has loaded adding, removing, and updating elements on the DOM
+([x]) After reading through the codes written be able to describe what they do to and why they are used.
 
 ## Overview
 
